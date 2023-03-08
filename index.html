@@ -10,7 +10,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <!--Font-Awesome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+  <link rel="stylesheet" type="text/css" href="styles.css">
   
   <title>Document</title>
 
@@ -18,8 +18,10 @@
 <body>
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        <table>
+      <h1>Emma-Lou-Who</h1>
+      <div id="shopping-cart-box" class="col-12">
+        <h1>Shopping Cart</h1>
+        <table id="shopping-cart-table">
           <thead>
             <tr class="column-title">
               <th scope="col">Item</th>
@@ -46,9 +48,10 @@
             </tr>
           </tbody>
         </table>
+        <hr>
         <form id="btn-add">
-          <input type="text" value="ADD" name="name-of-item" required>
-          <input type="number" value="0" name="cost-of-item" required>
+          <input class="new-item" type="text" placeholder="Add" name="name-of-item" required>
+          <input class="new-item-cost" type="number"  name="cost-of-item" placeholder="0" required>
           <button>ADD</button>
         </form>
         <div>
