@@ -35,16 +35,22 @@
               <td class="cost">25</td>
               <td><input class="qty" type="number" value="1"></td>
               <td class="total"></td>
-              <td><button class="btn-delete">X</button></td>
+              <td><button id="btn-delete">Delete</button></td>
             </tr>
             <tr>
               <td class="item">Tuna</td>
               <td class="cost">40</td>
-              <td><input class="qty" type="number" value="2"></td>
+              <td><input class="qty" type="number" value="1"></td>
               <td class="total"></td>
-              <td><button class="btn-delete">X</button></td>
+              <td><button id="btn-delete">Delete</button></td>
+            </tr>
           </tbody>
         </table>
+        <form id="btn-add">
+          <input type="text" value="ADD" name="name-of-item" required>
+          <input type="number" value="0" name="cost-of-item" required>
+          <button>ADD</button>
+        </form>
         <div>
           <h3 id="cart-Total"></h3>
         </div>
